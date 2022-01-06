@@ -15617,7 +15617,112 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 body {
-  background: red;
+  font-size: 1.25rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+}
+
+a {
+  color: #f88379;
+  font-weight: 400;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+
+.footer {
+  font-size: 1rem;
+}
+.footer.wrapper {
+  padding: 1rem 0;
+}
+
+.custom-logo-link img {
+  max-width: 300px !important;
+}
+
+.header {
+  background: url("../src/img/flower-basket-hero-4.jpg") no-repeat;
+  background-color: #c2c3c8;
+  background-position: 100% 0;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+.nav-link {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: #aaa;
+}
+
+.btn-primary {
+  background-color: #f88379;
+  border-color: #f88379;
+}
+.btn-primary:hover {
+  background-color: #aaa;
+  border-color: #aaa;
+}
+
+.wp-block-button__link {
+  padding: 15px 20px !important;
+  font-family: "Montserrat";
+  border-radius: 0;
+}
+.wp-block-button__link strong {
+  font-weight: 400;
+}
+
+.course-callout li {
+  color: #000;
+  text-align: center;
+  background: #f7f7f7;
+  border-radius: 15px;
+  border: 1px solid #eee;
+}
+.course-callout .wp-block-post-template .wp-block-post-featured-image {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+.course-callout .wp-block-post-template .wp-block-post-featured-image img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.course-callout .wp-block-post-title {
+  padding: 30px 20px 10px 20px;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: bold;
+}
+.course-callout .wp-block-post-excerpt {
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+.understrap-read-more-link {
+  width: 100%;
+  background-color: #f88379;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+.understrap-read-more-link:hover {
+  background-color: #ffb7b5;
 }
 
 .has-blue-color,

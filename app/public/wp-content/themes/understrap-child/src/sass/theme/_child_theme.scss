@@ -1,4 +1,128 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@100;300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 body {
-    background: red;
+  font-size: $font-base-size;
+  font-family: 'Roboto';
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+}
+
+a {
+  color: $coral;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.footer {
+  font-size: 1rem;
+
+  &.wrapper {
+    padding: 1rem 0;
+  }
+}
+
+.custom-logo-link img {
+  max-width: 300px !important;
+}
+
+.header {
+  background: url('../src/img/flower-basket-hero-4.jpg') no-repeat;
+  background-color: #c2c3c8;
+  background-position: 100% 0;
+
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+.nav-link {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  &:hover {
+    color: #aaa;
+  }
+}
+
+.btn-primary {
+  background-color: $coral;
+  border-color: $coral;
+
+  &:hover {
+    background-color: #aaa;
+    border-color: #aaa;
+  }
+}
+
+.wp-block-button__link {
+  padding: 15px 20px !important;
+  font-family: 'Montserrat';
+  border-radius: 0;
+
+  strong {
+    font-weight: 400;
+  }
+}
+
+.course-callout {
+
+  li {
+    color: $black;
+    text-align: center;
+    background: #f7f7f7;
+    border-radius: 15px;
+    border: 1px solid #eee;
+  }
+
+  .wp-block-post-template {
+    .wp-block-post-featured-image {
+      margin: 0 auto;
+      width: 100%; 
+      max-width: 100%;
+
+      img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+    }
+  }
+
+  .wp-block-post-title {
+    padding: 30px 20px 10px 20px;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .wp-block-post-excerpt {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+}
+
+.understrap-read-more-link {
+  width: 100%;
+  background-color: $coral;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: $coral-light;
+  }
+}

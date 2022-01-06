@@ -24,25 +24,11 @@ if ( is_front_page() ) {
 
 				<main class="site-main" id="main" role="main">
 
-          <div class="jumbotron">
-            <div class="container">
-              <div class="col-md-8">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="container py-md-4">
+          <div class="container px-md-0 py-md-4">
             <?php
             while ( have_posts() ) {
               the_post();
-              get_template_part( 'loop-templates/content', 'page' );
+              get_template_part( 'loop-templates/content', 'front-page' );
 
               // If comments are open or we have at least one comment, load up the comment template.
               if ( comments_open() || get_comments_number() ) {

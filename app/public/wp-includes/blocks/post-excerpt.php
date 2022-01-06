@@ -47,6 +47,7 @@ function render_block_core_post_excerpt( $attributes, $content, $block ) {
 	}
 	remove_filter( 'excerpt_more', $filter_excerpt_more );
 	return sprintf( '<div %1$s>%2$s</div>', $wrapper_attributes, $content );
+	add_filter('excerpt_more','__return_false');
 }
 
 /**
