@@ -15620,7 +15620,7 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 body {
-  font-size: 1.15rem;
+  font-size: 1.14rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   color: #333;
@@ -15630,19 +15630,24 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.3;
 }
 .testimonials h1, .testimonials .h1, .testimonials h2, .testimonials .h2, .testimonials h3, .testimonials .h3, .testimonials h4, .testimonials .h4 {
   font-weight: 300;
 }
 
+h5, .h5 {
+  color: #be3648;
+}
+
 a {
-  color: #f88379;
+  color: #fa8f85;
+  font-family: "Work Sans";
   font-weight: 400;
   text-decoration: none;
 }
 a:hover {
-  color: #000;
+  color: #666666;
 }
 
 p {
@@ -15653,13 +15658,14 @@ p {
   color: #be3648;
 }
 
-.footer {
-  color: #fff;
-  background: #be3648;
-  font-size: 1rem;
+.big-text {
+  font-family: "Libre Baskerville", serif;
+  font-size: 24px;
+  color: #666666;
 }
-.footer.wrapper {
-  padding: 1rem 0;
+
+.gray-background {
+  background: #efefef;
 }
 
 .custom-logo-link img {
@@ -15671,6 +15677,9 @@ p {
   }
 }
 
+.header {
+  border-top: 10px solid #ffb7b5;
+}
 .home .header {
   background: #F8F4E8;
 }
@@ -15681,23 +15690,31 @@ p {
 }
 
 .jumbotron {
+  position: relative;
   padding: 0;
   color: #fff;
   margin: 0;
 }
 .jumbotron h2, .jumbotron .h2 {
-  font-size: 4.5rem;
-  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media (min-width: 1200px) {
+  .jumbotron h2, .jumbotron .h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .jumbotron h2, .jumbotron .h2 {
+    font-size: 2rem;
+  }
 }
 .jumbotron span.emphasis {
   color: #414141;
   font-weight: 600;
   font-style: italic;
-}
-@media (max-width: 767.98px) {
-  .jumbotron {
-    padding-top: 4rem;
-  }
 }
 
 .slick-slack {
@@ -15737,7 +15754,6 @@ p {
   height: 100%;
   width: 100%;
   align-items: center;
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .slick-dots {
@@ -15764,15 +15780,30 @@ p {
   background-color: #be3648;
 }
 
+.home .menu-item:hover .nav-link {
+  color: #ffb7b5;
+}
+
 .nav-link {
-  color: #000;
+  color: #414141;
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 .nav-link:hover, .nav-link:focus, .active .nav-link {
-  color: #be3648;
+  color: #fa8f85;
+}
+.home .nav-link {
+  color: #fff;
+}
+@media (max-width: 991.98px) {
+  .nav-link {
+    color: #fff;
+  }
+  .nav-link:hover, .nav-link:focus, .active .nav-link {
+    color: #ffb7b5;
+  }
 }
 
 .btn-primary {
@@ -15793,7 +15824,7 @@ p {
 .btn-secondary,
 .wp-block-button__link {
   color: #fff;
-  background: #f88379;
+  background: #fa8f85;
   border: 0;
   border-radius: 30px;
   padding: 10px 15px;
@@ -15819,12 +15850,12 @@ p {
 }
 .btn-alt .wp-block-button__link:hover {
   color: #fff;
-  background: #f88379;
+  background: #fa8f85;
 }
 
 .wp-block-button__link {
   padding: 15px 30px !important;
-  font-family: "Montserrat";
+  font-family: "Work Sans";
   letter-spacing: 1.5px;
 }
 @media (min-width: 768px) {
@@ -15878,12 +15909,41 @@ p {
 
 .navbar {
   background: #fff;
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.4);
-  border-top: 10px solid #ffb7b5;
+  z-index: 999;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .navbar {
+    position: absolute;
+  }
+}
+.home .navbar {
+  background: transparent;
+  position: absolute;
+}
+@media (max-width: 991.98px) {
+  .navbar .nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: #be3648;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 .navbar-brand .logo {
-  width: 300px;
+  width: 275px;
+}
+@media (max-width: 991.98px) {
+  .navbar-brand .logo {
+    width: 160px;
+  }
 }
 
 .navbar .container {
@@ -15912,15 +15972,6 @@ p {
   border-radius: 30px;
 }
 
-.footer__logo {
-  max-width: 200px;
-}
-
-.footer__social-image {
-  height: 22px;
-  width: 22px;
-}
-
 .navbar-collapse {
   flex-basis: auto;
   flex-grow: initial;
@@ -15943,6 +15994,17 @@ p {
 
 .wrapper {
   padding: 0;
+}
+@media (max-width: 767.98px) {
+  .wrapper {
+    margin-top: 80px;
+  }
+  .home .wrapper {
+    margin-top: 0;
+  }
+  .wrapper.footer {
+    margin-top: 0;
+  }
 }
 
 div.wpforms-container-full .wpforms-form input[type=date],
@@ -16006,17 +16068,20 @@ div.wpforms-container-full .wpforms-form textarea {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 1.1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
 }
 .navigation-menu .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.1rem;
-  margin-bottom: 4px;
+  box-shadow: 0 0 0 0.05rem;
+}
+
+.navigation-menu__icon {
+  width: 30px;
 }
 
 .divider {
   height: 50px;
-  background: #f88379;
+  background: #fa8f85;
 }
 
 div.wpforms-container-full .wpforms-form input[type=submit],
@@ -16036,7 +16101,7 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
 div.wpforms-container-full .wpforms-form input[type=submit]:hover,
 div.wpforms-container-full .wpforms-form button[type=submit]:hover,
 div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
-  background: #f88379;
+  background: #fa8f85;
 }
 
 #wpforms-323-field_3 {
@@ -16461,27 +16526,133 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   border: 1px solid #e9ecef;
 }
 
-.button {
-  padding: 12px 20px;
+.booking .fieldCalendar,
+.booking .fieldCalendarService,
+.booking .slotsCalendar,
+.booking .captcha {
+  margin: 20px 0;
+}
+.booking .slots,
+.booking .ui-datepicker {
+  box-shadow: none !important;
+}
+.booking #fbuilder .slots {
+  border: 0;
+}
+.booking #fbuilder .slots a {
+  padding: 4px 8px;
+  font-size: 1.1rem;
+  color: #666666;
+  background: transparent;
+}
+.booking #fbuilder .slots a:hover {
+  color: #fff;
+  background: #be3648;
+}
+.booking #fbuilder .ui-datepicker {
+  border: 1px solid #bbbbbb;
+}
+.booking #fbuilder .ui-datepicker td {
+  height: 50px;
+}
+.booking #fbuilder .ui-datepicker td span {
+  font-weight: normal !important;
+}
+.booking #fbuilder .ui-datepicker-header {
+  padding: 16px 0 !important;
+  margin-bottom: 10px;
+  background: #eeeeee !important;
+}
+.booking .captcha {
+  color: #be3648;
+  font-size: 1rem;
+}
+.booking .captcha img {
+  margin: 10px 0;
+}
+.booking .captcha .dfield {
+  margin-top: 8px;
+  max-width: 400px;
+}
+.booking #fbuilder .ui-datepicker-calendar .ui-state-active {
+  color: #fa8f85 !important;
+}
+
+.button,
+.forminator-button,
+#fbuilder .pbSubmit {
+  padding: 20px 24px;
   text-transform: uppercase;
   background: #be3648;
   border: 0;
   color: #fff;
   font-weight: 500;
+  background: linear-gradient(to right, #414141 50%, #be3648 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.25s ease-out;
 }
-.button:hover {
-  background: #414141;
+.button:hover,
+.forminator-button:hover,
+#fbuilder .pbSubmit:hover {
   color: #fff;
   cursor: pointer;
+  background-position: left bottom;
+}
+
+#fbuilder .pbSubmit {
+  padding: 20px 24px !important;
+  background: #be3648 !important;
+  color: #fff !important;
 }
 
 .button--outline {
-  background: transparent;
-  border: 4px solid #fff;
+  background: linear-gradient(to right, #414141 50%, #fa8f85 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+.button--outline:hover {
   color: #fff;
 }
+@media (max-width: 767.98px) {
+  .button--outline {
+    font-size: 0.8rem;
+  }
+}
 
-.callout {
+.button--alt {
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  border-radius: 50px;
+  font-weight: 400;
+}
+.button--alt:after {
+  content: "";
+  display: inline-flex;
+  margin-left: 12px;
+  height: 12px;
+  width: 32px;
+  background-image: url("../src/img/arrow-right.svg");
+  background-repeat: no-repeat;
+}
+@media (max-width: 767.98px) {
+  .button--alt {
+    font-size: 0.8rem;
+  }
+}
+
+.button--down:after {
+  margin-left: 8px;
+  width: 26px;
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+.callout,
+.callout a {
   display: flex;
   position: relative;
   overflow: hidden;
@@ -16489,21 +16660,43 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   justify-content: center;
   align-items: center;
 }
-.callout__overlay {
+.callout__overlay,
+.callout a__overlay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: absolute;
+  height: 100%;
   width: 100%;
-  background: #be3648;
+  background: rgba(150, 43, 57, 0.3);
 }
-.callout__overlay:hover {
+.callout__overlay:hover,
+.callout a__overlay:hover {
   cursor: pointer;
-  background: #962b39;
+  background: rgba(190, 54, 72, 0.1);
 }
-.callout__heading {
+.callout__heading,
+.callout a__heading {
   z-index: 1;
   display: block;
+  background: #414141;
   color: #fff;
   font-family: "Work Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
+}
+.callout__overlay:hover .callout__heading,
+.callout__overlay:hover .callout a__heading {
+  background: #be3648;
+}
+
+.callout a {
+  transition: transform 0.25s ease-out;
+}
+.callout a:hover {
+  transform: translateY(-10px);
+  border-bottom: 8px solid #be3648;
+  margin-bottom: -8px;
 }
 
 .cta {
@@ -16516,8 +16709,130 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   font-weight: 700;
 }
 
-.testimonials {
-  background: #efefef;
+.footer {
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 10px solid #ffb7b5;
+  background: url("../src/img/footer-bg.jpg");
+}
+.footer.wrapper {
+  padding: 1rem 0;
+}
+.footer__menu {
+  list-style: none;
+  margin: 0;
+}
+.footer__menu-item {
+  padding: 8px 4px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+.footer__menu-item:last-child {
+  border-bottom: 0;
+}
+.footer__menu-link {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.footer__menu-item:hover .footer__menu-link {
+  color: #ffb7b5;
+}
+
+.footer__logo img {
+  width: 200px;
+}
+
+.footer__social-image {
+  height: 22px;
+  width: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 8px;
+  color: #be3648;
+  font-size: 1rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=phone],
+textarea, select {
+  padding: 4px 8px !important;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #bbbbbb;
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=phone]::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  color: #bbbbbb;
+}
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=phone]:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  color: #bbbbbb;
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=phone]::placeholder,
+textarea::placeholder, select::placeholder {
+  color: #bbbbbb;
+}
+input[type=text]:focus-visible,
+input[type=email]:focus-visible,
+input[type=phone]:focus-visible,
+textarea:focus-visible, select:focus-visible {
+  outline: 1px solid #ffb7b5;
+}
+
+select {
+  width: auto;
+}
+
+.forminator-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.forminator-description {
+  margin-top: 8px;
+  color: #666666;
+  font-size: 1rem;
+}
+
+.section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+@media (min-width: 992px) {
+  .section {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+
+.testimonials .testimonial {
+  color: #666666;
+  font-size: 24px;
+  font-family: "Libre Baskerville", serif;
+}
+.testimonials .testimonial .col-md-6 {
+  border: 1px solid #414141;
+  border-width: 1px 0;
+}
+@media (max-width: 767.98px) {
+  .testimonials .testimonial {
+    padding: 0 25px;
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=child-theme.css.map */

@@ -24,52 +24,93 @@ if ( is_front_page() ) {
 
 				<main class="site-main" id="main" role="main">
 
-        <div class="col-md-8 m-auto py-5 mt-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus elit ac facilisis interdum. Fusce ultricies, ligula sit amet placerat imperdiet, massa neque pretium quam, dapibus dignissim neque ligula eget ipsum. Cras non libero vitae justo bibendum sodales quis vel ex. Pellentesque dignissim elit nec placerat scelerisque. Curabitur nunc urna, imperdiet at auctor in, luctus non neque. Aliquam lacinia, enim vel posuere fermentum, sem sapien bibendum justo, sed laoreet sem metus et leo. In vulputate metus id viverra vestibulum. Donec sit amet dui pretium, ultricies mi eu, tristique urna.</p>
-        </div>
+					<div class="row mb-md-5 gx-0 mx-0">
+						<div class="col-md-6 m-lg-auto fade-in-right delay-5000">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/happy.jpg" />
+						</div>
+						<div class="col-md-6 mx-auto my-5 px-4 px-md-5 d-flex flex-column justify-content-center align-items-start fade-in-left delay-5000">
+							<h4 class="mb-4">Are You Ready To Take Your Life To The Next Level?</h4>
+							<p class="mb-5">Do you look at your life and think, <em>"There must be more than this!"</em>? Have you been caught in a constant cycle of start-and-stop when it comes to your dreams and goals? Are you looking for something new in your life? For more than 30 years, I've helped men and women level-up on life and accomplish their goals, with the help of my <a href="solutions#coaching">coaching programs</a> and strategies. I'd love to help you on your jouney to the next level of your life!</p>
+                            <a href="booking" class="d-block button button--alt">Get Started</a>
+						</div>
+					</div>
 
-        <div class="col-md-10 m-auto row py-5 mb-5">
-          <div class="callout col-md-4">
-            <div class="callout">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/coaching.png"/>
-              <div class="callout__overlay p-3"><p class="callout__heading">Coaching</p></div>
-            </div>
-          </div>
-          <div class="callout col-md-4">
-            <div class="callout">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/speaking.png"/>
-              <div class="callout__overlay p-3"><p class="callout__heading">Speaking</p></div>
-            </div>
-          </div>
-          <div class="callout col-md-4">
-            <div class="callout">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/events.png"/>
-              <div class="callout__overlay p-3"><p class="callout__heading">Events</p></div>
-            </div>
-          </div>
-        </div>
+					<div class="col-md-7 m-auto mt-2 px-4 section fade-in-left delay-2000">
+						<p>Stephanie Stevens makes it her mission to help men and women to discover their purpose, develop their power and pursue their dreams. She believes that once you discover your purpose, wise up and rise up in confidence, you can then be empowered to leave your thumbprint on earth and have create lasting impact.</p>
+					</div>
 
-        <div class="testimonials py-5">
-          <div class="m-auto testimonials__wrapper row col-md-8">
-            <div class="testimonial col-md-6 m-auto py-3">
-              <p>Stephanie affirms the woman in me that I did not see.</p>
-            </div>
-            <div class="testimonial col-md-6 m-auto py-3">
-              <p>I highly recommend coaching by Stephanie – sooner rather than later, and then as often as you can.”</p>
-            </div>
-          </div>
-        </div>
+					<div class="col-md-10 m-auto row py-md-5 mb-3 mb-md-5 move-in-up delay-2000">
+						<div class="callout col-md-3 mb-4 mb-md-0">
+							<div class="callout">
+								<a href="solutions#coaching">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/1-1coaching.jpg" />
+									<div class="callout__overlay d-flex flex-column">
+										<p class="callout__heading px-3 py-2">1:1 Coaching</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="callout col-md-3 mb-4 mb-md-0">
+							<div class="callout">
+								<a href="solutions#group-coaching">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/group-coaching.jpg" />
+									<div class="callout__overlay d-flex flex-column">
+										<p class="callout__heading px-3 py-2">Group Coaching</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="callout col-md-3 mb-4 mb-md-0">
+							<div class="callout">
+                            <a href="solutions#speaking">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/speaking.png" />
+								<div class="callout__overlay d-flex flex-column">
+									<p class="callout__heading px-3 py-2">Speaking</p>
+								</div>
+                            </a>
+							</div>
+						</div>
+						<div class="callout col-md-3 mb-4 mb-md-0">
+							<div class="callout">
+                            <a href="solutions#events">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/events.jpg" />
+								<div class="callout__overlay d-flex flex-column">
+									<p class="callout__heading px-3 py-2">Events</p>
+								</div>
+                            </a>
+							</div>
+						</div>
+					</div>
 
-        <div class="cta px-5 py-4">
-          <div class="col-12 row gx-0">
-            <div class="d-flex col-md-6 align-items-center">
-              <h3 class="cta__heading m-0">Are you ready to take your life to the next level?</h3>
-            </div>
-            <div class="d-flex col-md-6 justify-content-md-end">
-              <a href="#" class="button button--outline">Book A Free Consultation</a>
-            </div>
-          </div>
-        </div>
+					<div class="testimonials py-3 py-md-5">
+						<div class="m-auto testimonials__wrapper">
+							<div class="testimonial text-center py-3">
+								<p class="col-md-8 col-lg-6 m-auto py-5">"I highly recommend coaching by Stephanie – sooner rather
+									than later, and then as often as you can.”</p>
+							</div>
+							<div class="testimonial text-center py-3">
+								<p class="col-md-8 col-lg-6 m-auto py-5">
+									"Stephanie Stevens will push you towards greatness. She has encouraged me to pursue the things that I am good at and also the things that scare me the most. Her coaching has given me the confidence to face my fears."
+								</p>
+							</div>
+							<div class="testimonial text-center py-3">
+								<p class="col-md-8 col-lg-6 m-auto py-5">"Stephanie affirms the woman in me that I did not see!"
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-5 gx-0 mx-0">
+						<div class="col-md-6 m-lg-auto fade-in-right">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/words.png" />
+						</div>
+						<div class="col-md-6 mx-auto mb-5 mt-5 mt-lg-0 px-5 fade-in-left">
+							<h4 class="mb-4">Understand The Power of Your Words</h4>
+							<p class="mb-5">Stephanie sat down with the host of <em>Heirs and Arrows</em> podcast to discuss <em><a href="https://podcasts.apple.com/us/podcast/heirs-and-arrows/id1502942791?i=1000501135491" target="_blank">The Power of Your Words</a></em>. Hear life-lessons from Stephanie on how she uses the power of her words to help shape the life that she wants to live, along with practical insight on how you can do it too.</p>
+							<a target="_blank" href="https://podcasts.apple.com/us/podcast/heirs-and-arrows/id1502942791?i=1000501135491" class="button button--alt">Listen</a>
+						</div>
+					</div>
+
 
 				</main><!-- #main -->
 
@@ -80,5 +121,19 @@ if ( is_front_page() ) {
 	</div><!-- #content -->
 
 </div><!-- #full-width-page-wrapper -->
+
+<script>
+	jQuery('.testimonials__wrapper').slick({
+		autoplay: true,
+		pauseOnHover: false,
+		arrows: false,
+		dots: true,
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		autoplaySpeed: 4000,
+
+	});
+
+</script>
 <?php
 get_footer();

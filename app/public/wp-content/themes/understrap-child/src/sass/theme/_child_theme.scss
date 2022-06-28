@@ -13,20 +13,25 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.3;
 
   .testimonials & {
     font-weight: 300;
   }
 }
 
+h5 {
+  color: $red;
+}
+
 a {
   color: $coral;
+  font-family: 'Work Sans';
   font-weight: 400;
   text-decoration: none;
 
   &:hover {
-    color: $black;
+    color: $gray;
   }
 }
 
@@ -38,14 +43,14 @@ p {
   color: $red;
 }
 
-.footer {
-  color: $white;
-  background: $red;
-  font-size: 1rem;
+.big-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
+  color: $gray;
+}
 
-  &.wrapper {
-    padding: 1rem 0;
-  }
+.gray-background {
+  background: #efefef;
 }
 
 .custom-logo-link img {
@@ -57,9 +62,9 @@ p {
 }
 
 .header {
+  border-top: 10px solid $coral-light;
 
   .home & {
-   // height: 600px;
     background: $header-bg-color;
   }
 
@@ -71,23 +76,30 @@ p {
 }
 
 .jumbotron {
+  position: relative;
   padding: 0;
   color: $white;
   margin: 0;
 
   h2 {
-    font-size: 4.5rem;
-    text-shadow: 1px 2px 1px rgba($black, 0.3);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 400;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 4rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 2rem;
+    }
   }
 
   span.emphasis {
     color: $dark-gray;
     font-weight: 600;
     font-style: italic;
-  }
-
-  @include media-breakpoint-down(md) {
-    padding-top: 4rem;
   }
 }
 
@@ -130,7 +142,7 @@ p {
   height: 100%;
   width: 100%;
   align-items: center;
-  background: rgba($black, 0.4);
+  //background: rgba($red, 0.4);
 }
 
 .slick-dots {
@@ -164,17 +176,39 @@ p {
 	
 }
 
+.menu-item:hover {
+  .home & {
+    .nav-link {
+      color: $coral-light;
+    }
+  }
+}
+
 .nav-link {
-  color: $black;
+  color: $dark-gray;
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 2px;
 
   &:hover,
   &:focus,
   .active & {
-    color: $red;
+    color: $coral;
+  }
+
+  .home & {
+    color: $white;
+  }
+
+  @include media-breakpoint-down(lg) {
+    color: $white;
+
+    &:hover,
+    &:focus,
+    .active & {
+      color: $coral-light;
+    }
   }
 }
 
@@ -229,7 +263,7 @@ p {
 
 .wp-block-button__link {
   padding: 15px 30px !important;
-  font-family: 'Montserrat';
+  font-family: 'Work Sans';
   letter-spacing: 1.5px;
 
   @include media-breakpoint-up(md) {
@@ -293,14 +327,41 @@ p {
 
 .navbar {
   background: $white;
-  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.4);
-  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.4);
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.4);
-  border-top: 10px solid $coral-light;
+  z-index: 999;
+  width: 100%;
+
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+  }
+
+  .home & {
+    background: transparent;
+    position: absolute;
+  }
+
+  .nav {
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+}
+
+.navbar-collapse {
+  @include media-breakpoint-down(lg) {
+    background: $red;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 .navbar-brand .logo {
-  width: 300px;
+  width: 275px;
+
+  @include media-breakpoint-down(lg) {
+    width: 160px;
+  }
 }
 
 .navbar .container {
@@ -329,15 +390,6 @@ p {
   border-radius: 30px;
 }
 
-.footer__logo {
-  max-width: 200px;
-}
-
-.footer__social-image {
-  height: 22px;
-  width: 22px;
-}
-
 .navbar-collapse {
   flex-basis: auto;
   flex-grow: initial;
@@ -362,6 +414,18 @@ p {
 
 .wrapper {
   padding: 0;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 80px;
+
+    .home & {
+      margin-top: 0;
+    }
+
+    &.footer {
+      margin-top: 0;
+    }
+  }
 }
 
 
@@ -426,13 +490,16 @@ div.wpforms-container-full .wpforms-form textarea {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 1.1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
 
   &:focus {
-    box-shadow: 0 0 0 0.1rem;
-    margin-bottom: 4px;
+    box-shadow: 0 0 0 0.05rem;
   }
+}
+
+.navigation-menu__icon {
+  width: 30px;
 }
 
 .divider {
