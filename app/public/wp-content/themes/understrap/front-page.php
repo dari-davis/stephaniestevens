@@ -39,7 +39,7 @@ if ( is_front_page() ) {
 						<p>Stephanie Stevens makes it her mission to help men and women to discover their purpose, develop their power and pursue their dreams. She believes that once you discover your purpose, wise up and rise up in confidence, you can then be empowered to leave your thumbprint on earth and have create lasting impact.</p>
 					</div>
 
-					<div class="col-md-10 m-auto row py-md-5 mb-3 mb-md-5 move-in-up delay-2000">
+					<div class="col-md-10 m-auto row py-md-5 mb-3 move-in-up delay-2000">
 						<div class="callout col-md-3 mb-4 mb-md-0">
 							<div class="callout">
 								<a href="solutions#coaching">
@@ -62,7 +62,7 @@ if ( is_front_page() ) {
 						</div>
 						<div class="callout col-md-3 mb-4 mb-md-0">
 							<div class="callout">
-                            <a href="solutions#speaking">
+                            <a href="events#speaking">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/speaking.png" />
 								<div class="callout__overlay d-flex flex-column">
 									<p class="callout__heading px-3 py-2">Speaking</p>
@@ -72,7 +72,7 @@ if ( is_front_page() ) {
 						</div>
 						<div class="callout col-md-3 mb-4 mb-md-0">
 							<div class="callout">
-                            <a href="solutions#events">
+                            <a href="events#events">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/events.jpg" />
 								<div class="callout__overlay d-flex flex-column">
 									<p class="callout__heading px-3 py-2">Events</p>
@@ -82,35 +82,26 @@ if ( is_front_page() ) {
 						</div>
 					</div>
 
-					<div class="testimonials py-3 py-md-5">
+					<div class="testimonials section">
 						<div class="m-auto testimonials__wrapper">
 							<div class="testimonial text-center py-3">
 								<p class="col-md-8 col-lg-6 m-auto py-5">"I highly recommend coaching by Stephanie – sooner rather
 									than later, and then as often as you can.”</p>
+									<p class="testimonial__name">Robyn H.</p>
 							</div>
 							<div class="testimonial text-center py-3">
 								<p class="col-md-8 col-lg-6 m-auto py-5">
 									"Stephanie Stevens will push you towards greatness. She has encouraged me to pursue the things that I am good at and also the things that scare me the most. Her coaching has given me the confidence to face my fears."
 								</p>
+								<p class="testimonial__name">Dara A.</p>
 							</div>
 							<div class="testimonial text-center py-3">
 								<p class="col-md-8 col-lg-6 m-auto py-5">"Stephanie affirms the woman in me that I did not see!"
 								</p>
+								<p class="testimonial__name">Ayanna A.</p>
 							</div>
 						</div>
 					</div>
-
-					<div class="row mt-5 gx-0 mx-0">
-						<div class="col-md-6 m-lg-auto fade-in-right">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/words.png" />
-						</div>
-						<div class="col-md-6 mx-auto mb-5 mt-5 mt-lg-0 px-5 fade-in-left">
-							<h4 class="mb-4">Understand The Power of Your Words</h4>
-							<p class="mb-5">Stephanie sat down with the host of <em>Heirs and Arrows</em> podcast to discuss <em><a href="https://podcasts.apple.com/us/podcast/heirs-and-arrows/id1502942791?i=1000501135491" target="_blank">The Power of Your Words</a></em>. Hear life-lessons from Stephanie on how she uses the power of her words to help shape the life that she wants to live, along with practical insight on how you can do it too.</p>
-							<a target="_blank" href="https://podcasts.apple.com/us/podcast/heirs-and-arrows/id1502942791?i=1000501135491" class="button button--alt">Listen</a>
-						</div>
-					</div>
-
 
 				</main><!-- #main -->
 

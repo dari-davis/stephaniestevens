@@ -71,7 +71,6 @@ p {
 }
 
 .header__inner {
-  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -187,7 +186,7 @@ p {
 .nav-link {
   color: $dark-gray;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 2px;
 
@@ -210,6 +209,11 @@ p {
       color: $coral-light;
     }
   }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: $red;
 }
 
 .btn-primary {
@@ -415,7 +419,7 @@ p {
 .wrapper {
   padding: 0;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     margin-top: 80px;
 
     .home & {

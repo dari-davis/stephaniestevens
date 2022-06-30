@@ -15685,7 +15685,6 @@ p {
 }
 
 .header__inner {
-  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -15787,7 +15786,7 @@ p {
 .nav-link {
   color: #414141;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -15804,6 +15803,11 @@ p {
   .nav-link:hover, .nav-link:focus, .active .nav-link {
     color: #ffb7b5;
   }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #be3648;
 }
 
 .btn-primary {
@@ -15995,7 +15999,7 @@ p {
 .wrapper {
   padding: 0;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .wrapper {
     margin-top: 80px;
   }
@@ -16833,6 +16837,9 @@ select {
     padding: 0 25px;
     font-size: 24px;
   }
+}
+.testimonials .testimonial__name {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=child-theme.css.map */
